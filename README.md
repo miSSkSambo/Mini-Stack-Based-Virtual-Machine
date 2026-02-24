@@ -248,29 +248,28 @@ VMState {stack = [60], memory = fromList [("result",30)]}
 ---
 
 # 📸 Screenshots
- Instructions.hs
- **Description:**  
+ 
 Defines the virtual machine’s bytecode instruction set.  
 This module models the core operations supported by the VM, including arithmetic operations (`ADD`, `SUB`, `MUL`, `DIV`), stack manipulation (`PUSH`), and memory operations (`STORE`, `LOAD`).  
 It represents the execution language of the virtual machine.
  <img width="960" height="1020" alt="instructions hs" src="https://github.com/user-attachments/assets/38826c18-d289-4c73-9d9b-9b32df90e4e8" />
 
 Stack.hs
-**Description:**  
+ 
 Implements the stack abstraction used by the virtual machine.  
 The stack follows a Last-In-First-Out (LIFO) model and provides safe `push` and `pop` operations with error handling to prevent stack underflow.  
 This is the core data structure driving instruction execution.
 <img width="960" height="1020" alt="stack hs" src="https://github.com/user-attachments/assets/8bc9c7af-1c8b-4c49-b586-2c84994031b8" />
 
 Types.hs
-**Description:**  
+ 
 Implements the stack abstraction used by the virtual machine.  
 - The stack follows a Last-In-First-Out (LIFO) model and provides safe `push` and `pop` operations with error handling to prevent stack underflow.  
 -  This is the core data structure driving instruction execution.
 <img width="960" height="1020" alt="types hs" src="https://github.com/user-attachments/assets/2727cb2b-ee0e-4cf6-be82-531f66aa5a3f" />
 
 VM.hs
-**Description:**  
+ 
 Defines the virtual machine state structure.  
 The `VMState` contains:
 
@@ -281,7 +280,7 @@ State transitions are handled immutably, ensuring deterministic execution.
 <img width="960" height="1020" alt="vm hs" src="https://github.com/user-attachments/assets/93028bf9-8eb6-450c-b867-2b86615b4557" />
 
 Main.hs
-**Description:**  
+
 Acts as the program entry point.  
 Defines a sample bytecode program and invokes the execution engine.  
 This module demonstrates how instructions are composed and executed within the VM runtime.
@@ -289,7 +288,7 @@ This module demonstrates how instructions are composed and executed within the V
 <img width="960" height="1020" alt="main hs" src="https://github.com/user-attachments/assets/8a692816-eee4-4e31-a878-05f0b0dcf619" />
 
 Output
-**Description:**  
+
 Displays the final virtual machine state after execution.  
 The output confirms:
 
